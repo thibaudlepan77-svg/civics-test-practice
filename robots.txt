@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://thibaudlepan77-svg.github.io/civics-test-practice/sitemap.xml
