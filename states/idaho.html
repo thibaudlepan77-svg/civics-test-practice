@@ -67,13 +67,21 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--doux
 .sources{font-size:14px;color:var(--doux);border-top:1px solid var(--trait);
 margin-top:50px;padding-top:18px}
 .cache{display:none}
-@media(max-width:560px){h1{font-size:25px}body{font-size:16px}.enveloppe{padding:0 15px 60px}}
+@media(max-width:560px){h1{font-size:25px}body{font-size:16px}
+.enveloppe{padding:0 15px 60px}
+/* Le tableau des representants de Californie poussait la page a 398 px sur un
+   ecran de 360, mesure le 2026-09-04. Le lecteur devait balayer lateralement
+   pour lire un nom, sur le public le plus susceptible d'etre sur telephone.
+   On resserre d'abord, et la carte contient le debordement en dernier
+   recours, pour qu'aucun tableau ne puisse plus elargir la page entiere. */
+td,th{padding:6px 5px;font-size:14px}
+.carte{padding:12px 13px;overflow-x:auto}}
 </style>
 </head><body><div class="enveloppe">
 
 <header>
 <h1>The four answers for Idaho</h1>
-<p class="chapeau">The official USCIS list answers four of its questions with <em>Answers will vary</em>, because they depend on where you live. Here they are for Idaho, read from congress.gov, house.gov and usa.gov on 2026-08-24.</p>
+<p class="chapeau">The official USCIS list answers four of its questions with <em>Answers will vary</em>, because they depend on where you live. Here they are for Idaho. Senators and representatives read on 2026-09-04, governor and capital on 2026-08-24.</p>
 </header>
 <div class="carte"><table><tr><th>What is asked</th><th>2025 test</th><th>2008 test</th><th>Your answer</th></tr><tr><td>One of your U.S. senators</td><td>Q23</td><td>Q20</td><td><strong>Mike Crapo<br>James E. Risch</strong></td></tr><tr><td>Your U.S. representative</td><td>Q29</td><td>Q23</td><td><strong>Depends on your congressional district. Idaho has 2 representatives, listed below.</strong></td></tr><tr><td>Your governor</td><td>Q61</td><td>Q43</td><td><strong>Brad Little</strong></td></tr><tr><td>Your state capital</td><td>Q62</td><td>Q44</td><td><strong>Boise</strong></td></tr></table></div>
 <h2>Your two senators</h2>
@@ -103,9 +111,10 @@ without a screen and without a signal, which is how most people revise.</p>
 <div class="sources">
 <p><strong>Where these answers come from.</strong> The 128 questions and their
 accepted answers are the official USCIS civics test material, a work of the
-United States government. Senators, representatives, governors and state
-capitals were read from congress.gov, house.gov and usa.gov on 2026-08-24. Federal
-office holders change, so check
+United States government. Senators and representatives were read from
+congress.gov and house.gov on 2026-09-04. Governors and state capitals were read from
+usa.gov on 2026-08-24, and have not been checked since. Office holders change, so
+check
 <a href="https://www.uscis.gov/citizenship/testupdates">uscis.gov test updates</a>
 before your interview.</p>
 <p>Test rules read on 2026-08-24 from uscis.gov and the USCIS Policy Manual. This site

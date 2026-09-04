@@ -67,13 +67,21 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--doux
 .sources{font-size:14px;color:var(--doux);border-top:1px solid var(--trait);
 margin-top:50px;padding-top:18px}
 .cache{display:none}
-@media(max-width:560px){h1{font-size:25px}body{font-size:16px}.enveloppe{padding:0 15px 60px}}
+@media(max-width:560px){h1{font-size:25px}body{font-size:16px}
+.enveloppe{padding:0 15px 60px}
+/* Le tableau des representants de Californie poussait la page a 398 px sur un
+   ecran de 360, mesure le 2026-09-04. Le lecteur devait balayer lateralement
+   pour lire un nom, sur le public le plus susceptible d'etre sur telephone.
+   On resserre d'abord, et la carte contient le debordement en dernier
+   recours, pour qu'aucun tableau ne puisse plus elargir la page entiere. */
+td,th{padding:6px 5px;font-size:14px}
+.carte{padding:12px 13px;overflow-x:auto}}
 </style>
 </head><body><div class="enveloppe">
 
 <header>
 <h1>Las cuatro respuestas para Kentucky</h1>
-<p class="chapeau">La lista oficial del USCIS contesta estas cuatro preguntas con <em>Las respuestas variarán</em>, porque dependen de dónde vive usted. Aquí están para Kentucky, leídas en congress.gov, house.gov y usa.gov el 2026-08-24.</p>
+<p class="chapeau">La lista oficial del USCIS contesta estas cuatro preguntas con <em>Las respuestas variarán</em>, porque dependen de dónde vive usted. Aquí están para Kentucky, leídas en congress.gov, house.gov y usa.gov el 2026-09-04 y el 2026-08-24.</p>
 </header>
 <div class="carte"><table><tr><th>N°</th><th>Pregunta oficial</th><th>Su respuesta</th></tr><tr><td>23</td><td>¿Quién es uno de los senadores de su estado?</td><td><strong>Mitch McConnell<br>Rand Paul</strong></td></tr><tr><td>29</td><td>Provea el nombre de su representante en Estados Unidos.</td><td><strong>Depende de su distrito. Kentucky tiene 6 representantes, la lista está más abajo.</strong></td></tr><tr><td>61</td><td>¿Quién es el gobernador actual de su estado?</td><td><strong>Andy Beshear</strong></td></tr><tr><td>62</td><td>¿Cuál es la capital de su estado?</td><td><strong>Frankfort</strong></td></tr></table></div>
 <h2>Sus dos senadores</h2>
@@ -101,8 +109,9 @@ Funciona sin pantalla y sin señal, que es como casi todo el mundo estudia.</p>
 <div class="sources">
 <p><strong>De dónde salen estas respuestas.</strong> Los enunciados de las
 preguntas están copiados de la página oficial del USCIS en español. Los
-senadores, representantes, gobernadores y capitales se leyeron en congress.gov,
-house.gov y usa.gov el 2026-08-24. Los cargos federales cambian, así que confirme
+senadores y representantes se leyeron en congress.gov y house.gov el 2026-09-04. Los
+gobernadores y las capitales se leyeron en usa.gov el 2026-08-24 y no se han vuelto a
+comprobar desde entonces. Los cargos cambian, así que confirme
 <a href="https://www.uscis.gov/citizenship/testupdates">las actualizaciones del
 examen en uscis.gov</a> antes de su entrevista.</p>
 <p>Este sitio es independiente y no está afiliado al USCIS ni al gobierno de

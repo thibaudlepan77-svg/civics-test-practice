@@ -67,13 +67,21 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--doux
 .sources{font-size:14px;color:var(--doux);border-top:1px solid var(--trait);
 margin-top:50px;padding-top:18px}
 .cache{display:none}
-@media(max-width:560px){h1{font-size:25px}body{font-size:16px}.enveloppe{padding:0 15px 60px}}
+@media(max-width:560px){h1{font-size:25px}body{font-size:16px}
+.enveloppe{padding:0 15px 60px}
+/* Le tableau des representants de Californie poussait la page a 398 px sur un
+   ecran de 360, mesure le 2026-09-04. Le lecteur devait balayer lateralement
+   pour lire un nom, sur le public le plus susceptible d'etre sur telephone.
+   On resserre d'abord, et la carte contient le debordement en dernier
+   recours, pour qu'aucun tableau ne puisse plus elargir la page entiere. */
+td,th{padding:6px 5px;font-size:14px}
+.carte{padding:12px 13px;overflow-x:auto}}
 </style>
 </head><body><div class="enveloppe">
 
 <header>
 <h1>The four answers for Virginia</h1>
-<p class="chapeau">The official USCIS list answers four of its questions with <em>Answers will vary</em>, because they depend on where you live. Here they are for Virginia, read from congress.gov, house.gov and usa.gov on 2026-08-24.</p>
+<p class="chapeau">The official USCIS list answers four of its questions with <em>Answers will vary</em>, because they depend on where you live. Here they are for Virginia. Senators and representatives read on 2026-09-04, governor and capital on 2026-08-24.</p>
 </header>
 <div class="carte"><table><tr><th>What is asked</th><th>2025 test</th><th>2008 test</th><th>Your answer</th></tr><tr><td>One of your U.S. senators</td><td>Q23</td><td>Q20</td><td><strong>Tim Kaine<br>Mark R. Warner</strong></td></tr><tr><td>Your U.S. representative</td><td>Q29</td><td>Q23</td><td><strong>Depends on your congressional district. Virginia has 11 representatives, listed below.</strong></td></tr><tr><td>Your governor</td><td>Q61</td><td>Q43</td><td><strong>Abigail Spanberger</strong></td></tr><tr><td>Your state capital</td><td>Q62</td><td>Q44</td><td><strong>Richmond</strong></td></tr></table></div>
 <h2>Your two senators</h2>
@@ -81,7 +89,7 @@ margin-top:50px;padding-top:18px}
 <div class="carte"><table><tr><th>Senator</th><th>Party</th><th>Term ends</th></tr><tr><td>Tim Kaine</td><td>Democrat</td><td>2031</td></tr><tr><td>Mark R. Warner</td><td>Democrat</td><td>2027</td></tr></table></div>
 <h2>Your representative, by district</h2>
 <p>This is the one answer that depends on more than your state. Virginia has <strong>11</strong> congressional districts, and the officer wants the name for yours. If you do not know your district, enter your address on <a href="https://www.house.gov/representatives/find-your-representative">house.gov</a>.</p>
-<div class="carte"><table><tr><th>District</th><th>Representative</th><th>Party</th></tr><tr><td>1st</td><td>Robert Wittman</td><td>R</td></tr><tr><td>2nd</td><td>Jennifer Kiggans</td><td>R</td></tr><tr><td>3rd</td><td>Robert Scott</td><td>D</td></tr><tr><td>4th</td><td>Jennifer McClellan</td><td>D</td></tr><tr><td>5th</td><td>John McGuire</td><td>R</td></tr><tr><td>6th</td><td>Ben Cline</td><td>R</td></tr><tr><td>7th</td><td>Eugene Vindman</td><td>D</td></tr><tr><td>8th</td><td>Donald Beyer</td><td>D</td></tr><tr><td>9th</td><td>H. Griffith</td><td>R</td></tr><tr><td>10th</td><td>Suhas Subramanyam</td><td>D</td></tr><tr><td>11th</td><td>James Walkinshaw</td><td>D</td></tr></table></div>
+<div class="carte"><table><tr><th>District</th><th>Representative</th><th>Party</th></tr><tr><td>1st</td><td>Robert Wittman</td><td>R</td></tr><tr><td>2nd</td><td>Jennifer Kiggans</td><td>R</td></tr><tr><td>3rd</td><td>Robert Scott</td><td>D</td></tr><tr><td>4th</td><td>Jennifer McClellan</td><td>D</td></tr><tr><td>5th</td><td>John McGuire</td><td>R</td></tr><tr><td>6th</td><td>Ben Cline</td><td>R</td></tr><tr><td>7th</td><td>Eugene Simon Vindman</td><td>D</td></tr><tr><td>8th</td><td>Donald Beyer</td><td>D</td></tr><tr><td>9th</td><td>H. Morgan Griffith</td><td>R</td></tr><tr><td>10th</td><td>Suhas Subramanyam</td><td>D</td></tr><tr><td>11th</td><td>James Walkinshaw</td><td>D</td></tr></table></div>
 <h2>The rest of the test</h2>
 <p>These four are the only answers that change with your state. Everything else is the same wherever you live. <a href="../index.html">All 128 questions of the 2025 test</a>, <a href="../2008.html">the 100 questions of the 2008 test</a>, and <a href="../which-test.html">which of the two is yours</a>. There is a free mock test on both pages.</p>
 <p>Check these four the week of your interview and not months before. Senators and governors change with elections, and the officer wants the person serving on the day you are interviewed.</p>
@@ -103,9 +111,10 @@ without a screen and without a signal, which is how most people revise.</p>
 <div class="sources">
 <p><strong>Where these answers come from.</strong> The 128 questions and their
 accepted answers are the official USCIS civics test material, a work of the
-United States government. Senators, representatives, governors and state
-capitals were read from congress.gov, house.gov and usa.gov on 2026-08-24. Federal
-office holders change, so check
+United States government. Senators and representatives were read from
+congress.gov and house.gov on 2026-09-04. Governors and state capitals were read from
+usa.gov on 2026-08-24, and have not been checked since. Office holders change, so
+check
 <a href="https://www.uscis.gov/citizenship/testupdates">uscis.gov test updates</a>
 before your interview.</p>
 <p>Test rules read on 2026-08-24 from uscis.gov and the USCIS Policy Manual. This site
