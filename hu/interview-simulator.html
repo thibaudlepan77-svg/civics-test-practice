@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hungarian Citizenship Interview Simulator, Hear the Consul's Questions</title>
+<meta name="description" content="Practise the Hungarian simplified naturalization conversation. The consul's 39 questions spoken in Hungarian, a pause to answer out loud, translation in English, Spanish or Portuguese. Free, no sign-up.">
+<link rel="canonical" href="https://thibaudlepan77-svg.github.io/civics-test-practice/hu/interview-simulator.html">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+ rel="stylesheet">
+<style>
+:root{--fond:#fbfaf7;--carte:#fff;--encre:#1b1b1f;--doux:#5b5b66;--trait:#e3e0d8;
+--accent:#8c2f24;--accent-doux:#f4e9e7;--vert:#1f6b3f;--vert-doux:#e6f1ea}
+@media(prefers-color-scheme:dark){:root{--fond:#141416;--carte:#1d1d21;--encre:#eceaf0;
+--doux:#a2a2ad;--trait:#31313a;--accent:#e08578;--accent-doux:#33211f;--vert:#7dd39b;
+--vert-doux:#1b2b22}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--encre);
+font:17px/1.65 Georgia,"Iowan Old Style",serif;-webkit-text-size-adjust:100%}
+.enveloppe{max-width:820px;margin:0 auto;padding:0 20px 80px}
+h1,h2,h3,.ui{font-family:Inter,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1{font-size:31px;line-height:1.25;margin:0 0 10px;letter-spacing:-.02em}
+h2{font-size:22px;margin:44px 0 14px;letter-spacing:-.01em}
+h3{font-size:16px;margin:26px 0 8px;color:var(--doux);text-transform:uppercase;
+letter-spacing:.07em}
+a{color:var(--accent)}
+header{border-bottom:1px solid var(--trait);padding:26px 0 20px;margin-bottom:8px}
+.chapeau{color:var(--doux);font-size:17px;margin:0}
+nav.onglets{display:flex;gap:6px;flex-wrap:wrap;position:sticky;top:0;z-index:9;
+background:var(--fond);padding:12px 0;border-bottom:1px solid var(--trait);margin-bottom:20px}
+nav.onglets button{font:600 14px Inter,sans-serif;padding:9px 15px;border-radius:999px;
+border:1px solid var(--trait);background:var(--carte);color:var(--doux);cursor:pointer}
+nav.onglets button[aria-selected=true]{background:var(--accent);border-color:var(--accent);
+color:#fff}
+.carte{background:var(--carte);border:1px solid var(--trait);border-radius:12px;
+padding:18px 20px;margin:14px 0}
+.q{border-bottom:1px solid var(--trait);padding:15px 0}
+.q:last-child{border-bottom:0}
+.num{font:600 13px Inter,sans-serif;color:var(--doux);letter-spacing:.04em}
+.etoile{color:var(--accent);font-weight:700}
+.enonce{font-weight:600;margin:3px 0 7px}
+.rep{margin:0;padding-left:19px}
+.rep li{margin:2px 0}
+.perso{background:var(--vert-doux);border-left:3px solid var(--vert);
+padding:9px 13px;border-radius:0 8px 8px 0;margin:7px 0}
+.perso .etiquette{font:600 11px Inter,sans-serif;color:var(--vert);
+text-transform:uppercase;letter-spacing:.09em;display:block;margin-bottom:2px}
+select,.bouton{font:600 15px Inter,sans-serif;padding:10px 15px;border-radius:9px;
+border:1px solid var(--trait);background:var(--carte);color:var(--encre)}
+.bouton{background:var(--accent);border-color:var(--accent);color:#fff;cursor:pointer;
+text-decoration:none;display:inline-block}
+.bouton.creux{background:transparent;color:var(--accent)}
+.livre{background:var(--accent-doux);border:1px solid var(--trait);border-radius:12px;
+padding:22px;margin:40px 0}
+.livre p{margin:0 0 14px}
+.grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:8px}
+.grille a{display:block;padding:9px 12px;background:var(--carte);
+border:1px solid var(--trait);border-radius:8px;text-decoration:none;font:15px Inter,sans-serif}
+table{border-collapse:collapse;width:100%;font:15px Inter,sans-serif;margin:10px 0}
+td,th{text-align:left;padding:7px 9px;border-bottom:1px solid var(--trait)}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--doux)}
+.score{font:700 34px Inter,sans-serif;letter-spacing:-.02em}
+.sources{font-size:14px;color:var(--doux);border-top:1px solid var(--trait);
+margin-top:50px;padding-top:18px}
+.cache{display:none}
+@media(max-width:560px){h1{font-size:25px}body{font-size:16px}
+.enveloppe{padding:0 15px 60px}
+/* Le tableau des representants de Californie poussait la page a 398 px sur un
+   ecran de 360, mesure le 2026-09-04. Le lecteur devait balayer lateralement
+   pour lire un nom, sur le public le plus susceptible d'etre sur telephone.
+   On resserre d'abord, et la carte contient le debordement en dernier
+   recours, pour qu'aucun tableau ne puisse plus elargir la page entiere. */
+td,th{padding:6px 5px;font-size:14px}
+.carte{padding:12px 13px;overflow-x:auto}}
+
+.hu{font-weight:600}.tr{color:#555;font-size:.95em}.rep{margin:.3em 0 0 1em;
+padding-left:.8em;border-left:3px solid #c9a227}.q{margin:0 0 1.1em}
+.offre{background:#f6f1e3;border:1px solid #e0d3a8;padding:1em 1.2em;
+border-radius:8px;margin:1.6em 0}
+@media (prefers-color-scheme:dark){.tr{color:#bbb}.offre{background:#2a2618;
+border-color:#5a4d24}}
+
+.carte{border:1px solid #e0d3a8;border-radius:10px;padding:1.4em 1.3em;margin:1.2em 0;
+background:#fffdf7;text-align:center}
+.carte .hu{font-size:1.45em;margin:.3em 0}
+.carte .tr{min-height:1.4em}
+.etat{font-weight:600;color:#2f6b3a;min-height:1.3em;margin:.6em 0}
+.boutons button{font:inherit;padding:.55em 1.1em;margin:.25em;border-radius:8px;
+border:1px solid #7a1d1d;background:#7a1d1d;color:#fff;cursor:pointer}
+.boutons button.second{background:transparent;color:#7a1d1d}
+.langues{margin:.4em 0 0}.langues label{margin:0 .5em;cursor:pointer}
+.compte{color:#777;font-size:.9em}
+@media (prefers-color-scheme:dark){.carte{background:#211d12;border-color:#5a4d24}
+.boutons button.second{color:#e8c7c7;border-color:#e8c7c7}.etat{color:#9fd3a8}}
+</style>
+<script data-goatcounter="https://civicstestpractice.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head><body><div class="enveloppe">
+<h1>Hungarian citizenship interview simulator</h1>
+<p>At the consulate the officer talks with you in Hungarian. Here you hear the
+39 questions that come up most, one after the other. After each one you have
+nine seconds to answer out loud, as you would in the room. Nothing is recorded,
+everything stays in your browser.</p>
+<div class="carte">
+<div class="compte" id="compte"></div>
+<div class="hu" id="hu"></div>
+<div class="tr" id="tr"></div>
+<div class="etat" id="etat"></div>
+<div class="boutons">
+<button id="lancer">Start</button>
+<button id="ecouter" class="second">Hear again</button>
+<button id="suivante" class="second">Next</button>
+<button id="melanger" class="second">Shuffle</button>
+</div>
+<div class="langues">
+<label><input type="checkbox" id="voir" checked> Show translation</label>
+<label><input type="radio" name="lg" value="en" checked> English</label>
+<label><input type="radio" name="lg" value="es"> Español</label>
+<label><input type="radio" name="lg" value="pt"> Português</label>
+</div>
+</div>
+<div class="offre" id="fin" hidden><b>You got through the conversation.</b> The
+kit has a model answer in Hungarian for each question, the words of the
+application form, a model of the handwritten CV, the oath and slow audio of
+every answer, 19 EUR.<br><a href="https://thibaudlepan.gumroad.com/l/xfpik">https://thibaudlepan.gumroad.com/l/xfpik</a></div>
+<div class="offre"><b>Not sure what to answer?</b> Five questions with their
+model answers are free, <a href="https://thibaudlepan.gumroad.com/l/kobezp">in English</a>,
+<a href="https://thibaudlepan.gumroad.com/l/gldyoj">en español</a>, <a href="https://thibaudlepan.gumroad.com/l/zaufge">em português</a>. The full kit has
+all 43, with slow audio of every answer.<br><a href="https://thibaudlepan.gumroad.com/l/xfpik">https://thibaudlepan.gumroad.com/l/xfpik</a></div>
+<p>More on the <a href="language-requirement.html">language requirement</a>,
+on <a href="requirements.html">who can apply</a>, and every question in
+writing <a href="index.html">on this page</a>.</p>
+<p class="tr">The questions are the ones applicants and teachers report, not an
+official list. Independent publication, not affiliated with the Government of
+Hungary or any consulate.</p>
+</div>
+<script>
+const QUESTIONS = [{"son": "q_01.mp3", "hu": "Jó napot kívánok! Hogy van?", "en": "Good afternoon! How are you?", "es": "¡Buenas tardes! ¿Cómo está?", "pt": "Boa tarde! Como vai?"}, {"son": "q_02.mp3", "hu": "Mi a neve?", "en": "What is your name?", "es": "¿Cómo se llama?", "pt": "Qual é o seu nome?"}, {"son": "q_03.mp3", "hu": "Hány éves?", "en": "How old are you?", "es": "¿Cuántos años tiene?", "pt": "Quantos anos a senhora tem?"}, {"son": "q_04.mp3", "hu": "Hol és mikor született?", "en": "Where and when were you born?", "es": "¿Dónde y cuándo nació?", "pt": "Onde e quando a senhora nasceu?"}, {"son": "q_05.mp3", "hu": "Hol lakik most?", "en": "Where do you live now?", "es": "¿Dónde vive ahora?", "pt": "Onde a senhora mora agora?"}, {"son": "q_06.mp3", "hu": "Mi a foglalkozása?", "en": "What is your occupation?", "es": "¿Cuál es su profesión?", "pt": "Qual é a sua profissão?"}, {"son": "q_07.mp3", "hu": "Házas?", "en": "Are you married?", "es": "¿Está casada?", "pt": "A senhora é casada?"}, {"son": "q_08.mp3", "hu": "Vannak gyerekei?", "en": "Do you have children?", "es": "¿Tiene hijos?", "pt": "A senhora tem filhos?"}, {"son": "q_09.mp3", "hu": "Vannak testvérei?", "en": "Do you have brothers or sisters?", "es": "¿Tiene hermanos?", "pt": "A senhora tem irmãos?"}, {"son": "q_10.mp3", "hu": "Mi az édesanyja születési neve?", "en": "What is your mother's birth name?", "es": "¿Cuál es el nombre de soltera de su madre?", "pt": "Qual é o nome de solteira da sua mãe?"}, {"son": "q_11.mp3", "hu": "Mi az édesapja neve?", "en": "What is your father's name?", "es": "¿Cómo se llama su padre?", "pt": "Qual é o nome do seu pai?"}, {"son": "q_12.mp3", "hu": "Melyik felmenője volt magyar állampolgár?", "en": "Which of your ancestors was a Hungarian citizen?", "es": "¿Cuál de sus antepasados era ciudadano húngaro?", "pt": "Qual dos seus antepassados era cidadão húngaro?"}, {"son": "q_13.mp3", "hu": "Hol és mikor született a nagyapja?", "en": "Where and when was your grandfather born?", "es": "¿Dónde y cuándo nació su abuelo?", "pt": "Onde e quando nasceu o seu avô?"}, {"son": "q_14.mp3", "hu": "Mikor hagyta el Magyarországot a nagyapja?", "en": "When did your grandfather leave Hungary?", "es": "¿Cuándo dejó Hungría su abuelo?", "pt": "Quando o seu avô deixou a Hungria?"}, {"son": "q_15.mp3", "hu": "Beszélnek magyarul a családjában?", "en": "Does anyone in your family speak Hungarian?", "es": "¿En su familia hablan húngaro?", "pt": "Na sua família falam húngaro?"}, {"son": "q_16.mp3", "hu": "Mit mesélt a nagyapja Magyarországról?", "en": "What did your grandfather tell you about Hungary?", "es": "¿Qué le contaba su abuelo sobre Hungría?", "pt": "O que o seu avô contava sobre a Hungria?"}, {"son": "q_17.mp3", "hu": "Hol tanult meg magyarul?", "en": "Where did you learn Hungarian?", "es": "¿Dónde aprendió húngaro?", "pt": "Onde a senhora aprendeu húngaro?"}, {"son": "q_18.mp3", "hu": "Mióta tanul magyarul?", "en": "How long have you been learning Hungarian?", "es": "¿Desde cuándo estudia húngaro?", "pt": "Há quanto tempo a senhora estuda húngaro?"}, {"son": "q_19.mp3", "hu": "Miért szeretne magyar állampolgár lenni?", "en": "Why do you want to become a Hungarian citizen?", "es": "¿Por qué quiere ser ciudadana húngara?", "pt": "Por que a senhora quer ser cidadã húngara?"}, {"son": "q_20.mp3", "hu": "Mit jelent Önnek Magyarország?", "en": "What does Hungary mean to you?", "es": "¿Qué significa Hungría para usted?", "pt": "O que a Hungria significa para a senhora?"}, {"son": "q_21.mp3", "hu": "Járt már Magyarországon?", "en": "Have you ever been to Hungary?", "es": "¿Ha estado en Hungría?", "pt": "A senhora já esteve na Hungria?"}, {"son": "q_22.mp3", "hu": "Mit tervez, ha megkapja az állampolgárságot?", "en": "What are your plans once you receive citizenship?", "es": "¿Qué planea hacer cuando reciba la ciudadanía?", "pt": "O que a senhora pretende fazer quando receber a cidadania?"}, {"son": "q_23.mp3", "hu": "Mit csinál a szabadidejében?", "en": "What do you do in your free time?", "es": "¿Qué hace en su tiempo libre?", "pt": "O que a senhora faz no seu tempo livre?"}, {"son": "q_24.mp3", "hu": "Milyen magyar ételeket ismer?", "en": "Which Hungarian dishes do you know?", "es": "¿Qué platos húngaros conoce?", "pt": "Quais pratos húngaros a senhora conhece?"}, {"son": "q_25.mp3", "hu": "Mit csinált tegnap?", "en": "What did you do yesterday?", "es": "¿Qué hizo ayer?", "pt": "O que a senhora fez ontem?"}, {"son": "q_26.mp3", "hu": "Hogyan jött ide ma?", "en": "How did you get here today?", "es": "¿Cómo vino hoy?", "pt": "Como a senhora veio hoje?"}, {"son": "q_27.mp3", "hu": "Milyen idő van ma?", "en": "What is the weather like today?", "es": "¿Qué tiempo hace hoy?", "pt": "Como está o tempo hoje?"}, {"son": "q_28.mp3", "hu": "Mi Magyarország fővárosa?", "en": "What is the capital of Hungary?", "es": "¿Cuál es la capital de Hungría?", "pt": "Qual é a capital da Hungria?"}, {"son": "q_29.mp3", "hu": "Melyek a magyar nemzeti ünnepek?", "en": "What are the Hungarian national holidays?", "es": "¿Cuáles son las fiestas nacionales húngaras?", "pt": "Quais são os feriados nacionais húngaros?"}, {"son": "q_30.mp3", "hu": "Mit ünneplünk március 15-én?", "en": "What is celebrated on 15 March?", "es": "¿Qué se celebra el 15 de marzo?", "pt": "O que se comemora em 15 de março?"}, {"son": "q_31.mp3", "hu": "Mit ünneplünk augusztus 20-án?", "en": "What is celebrated on 20 August?", "es": "¿Qué se celebra el 20 de agosto?", "pt": "O que se comemora em 20 de agosto?"}, {"son": "q_32.mp3", "hu": "Mit ünneplünk október 23-án?", "en": "What is celebrated on 23 October?", "es": "¿Qué se celebra el 23 de octubre?", "pt": "O que se comemora em 23 de outubro?"}, {"son": "q_33.mp3", "hu": "Ki írta a Himnuszt?", "en": "Who wrote the national anthem?", "es": "¿Quién escribió el himno nacional?", "pt": "Quem escreveu o hino nacional?"}, {"son": "q_34.mp3", "hu": "Milyen színű a magyar zászló?", "en": "What colours is the Hungarian flag?", "es": "¿De qué colores es la bandera húngara?", "pt": "Quais são as cores da bandeira húngara?"}, {"son": "q_35.mp3", "hu": "Ki volt az első magyar király?", "en": "Who was the first king of Hungary?", "es": "¿Quién fue el primer rey de Hungría?", "pt": "Quem foi o primeiro rei da Hungria?"}, {"son": "q_36.mp3", "hu": "Mi a magyar pénz neve?", "en": "What is the Hungarian currency called?", "es": "¿Cómo se llama la moneda húngara?", "pt": "Como se chama a moeda húngara?"}, {"son": "q_37.mp3", "hu": "Melyik a legnagyobb magyar tó?", "en": "What is the largest lake in Hungary?", "es": "¿Cuál es el lago más grande de Hungría?", "pt": "Qual é o maior lago da Hungria?"}, {"son": "q_38.mp3", "hu": "Melyek Magyarország legnagyobb folyói?", "en": "What are the largest rivers in Hungary?", "es": "¿Cuáles son los ríos más grandes de Hungría?", "pt": "Quais são os maiores rios da Hungria?"}, {"son": "q_39.mp3", "hu": "Ismer híres magyar embereket?", "en": "Do you know any famous Hungarians?", "es": "¿Conoce a algún húngaro famoso?", "pt": "A senhora conhece húngaros famosos?"}];
+const PAUSE = 9;
+let rang = 0, minuteur = null, enCours = false;
+const audio = new Audio();
+const $ = (id) => document.getElementById(id);
+
+function langue() {
+  return document.querySelector("input[name=lg]:checked").value;
+}
+
+function montrer() {
+  const q = QUESTIONS[rang];
+  $("hu").textContent = q.hu;
+  $("tr").textContent = $("voir").checked ? q[langue()] : "";
+  $("compte").textContent = (rang + 1) + " / " + QUESTIONS.length;
+}
+
+function arreter() {
+  enCours = false;
+  clearInterval(minuteur);
+  audio.pause();
+  $("etat").textContent = "";
+  $("lancer").textContent = "Start";
+}
+
+function aVous() {
+  let reste = PAUSE;
+  $("etat").textContent = "Your turn, answer out loud. " + reste;
+  minuteur = setInterval(() => {
+    reste -= 1;
+    if (reste > 0) {
+      $("etat").textContent = "Your turn, answer out loud. " + reste;
+      return;
+    }
+    clearInterval(minuteur);
+    if (rang < QUESTIONS.length - 1) {
+      rang += 1;
+      poser();
+    } else {
+      arreter();
+      $("etat").textContent = "That is the whole conversation. Well done.";
+      $("fin").hidden = false;
+    }
+  }, 1000);
+}
+
+function poser() {
+  montrer();
+  $("etat").textContent = "The consul asks...";
+  audio.src = "audio/" + QUESTIONS[rang].son;
+  audio.onended = aVous;
+  audio.play().catch(aVous);
+}
+
+$("lancer").onclick = () => {
+  if (enCours) { arreter(); return; }
+  enCours = true;
+  $("lancer").textContent = "Pause";
+  $("fin").hidden = true;
+  poser();
+};
+$("suivante").onclick = () => {
+  clearInterval(minuteur);
+  audio.pause();
+  rang = (rang + 1) % QUESTIONS.length;
+  if (enCours) { poser(); } else { montrer(); }
+};
+$("ecouter").onclick = () => {
+  audio.src = "audio/" + QUESTIONS[rang].son;
+  audio.onended = null;
+  audio.play();
+};
+$("melanger").onclick = () => {
+  for (let i = QUESTIONS.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [QUESTIONS[i], QUESTIONS[j]] = [QUESTIONS[j], QUESTIONS[i]];
+  }
+  rang = 0;
+  arreter();
+  montrer();
+};
+$("voir").onchange = montrer;
+document.querySelectorAll("input[name=lg]").forEach((r) => { r.onchange = montrer; });
+montrer();
+</script>
+</body></html>
